@@ -7,7 +7,8 @@ from torch.autograd import Function
 from torch.utils.cpp_extension import load
 
 
-module_path = os.path.dirname(__file__)
+# module_path = os.path.dirname(__file__)
+module_path = "/home2/faculty/bsobieski/diff_inp/op"
 fused = load(
     "fused",
     sources=[
